@@ -1,0 +1,619 @@
+/* ==========================================================
+   Font • Reset • Variables • Body • Window • Header
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root{
+
+    --bg:#EAD6F2;
+
+    --header:#C97CDB;
+
+    --header-border:#B45ACB;
+
+    --border:#B58FD4;
+
+    --border-shadow:#9C6BC0;
+
+    --text:#A654C7;
+
+    --white:#FFF8FF;
+
+    --pink:#FFA0C8;
+
+    --pink-dark:#E76F8A;
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    user-select:none;
+
+}
+
+html,
+body{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:transparent;
+
+    overflow:hidden;
+
+    font-family:'Press Start 2P', monospace;
+
+}
+
+/* ==========================================================
+   MAIN WINDOW
+========================================================== */
+
+.widget{
+
+    width:300px;
+    height:380px;
+
+    background:var(--bg);
+     align-items: center;
+     justify-content: center;
+    border:4px solid var(--border);
+
+    box-shadow:
+
+        4px 0 0 var(--border),
+
+        0 4px 0 var(--border),
+
+        -4px 0 0 var(--border),
+
+        0 -4px 0 var(--border),
+
+        8px 8px 0 var(--border-shadow);
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.title-bar{
+
+    width:100%;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 14px;
+
+    background:var(--header);
+
+    border-bottom:4px solid var(--header-border);
+
+    -webkit-app-region:drag;
+
+}
+
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
+
+.title-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.pixel-btn{
+
+    width:8px;
+
+    height:8px;
+
+    border:2px solid var(--pink-dark);
+
+}
+
+.pixel-btn.pink{
+
+    background:var(--pink);
+
+}
+
+.pixel-btn.light{
+
+    background:#FFD8EA;
+
+}
+
+.title{
+
+    margin-left:4px;
+
+    color:var(--white);
+
+    font-size:7px;
+
+    letter-spacing:2px;
+
+    text-shadow:1px 1px #9443A6;
+
+}
+
+/* ==========================================================
+   RIGHT SIDE
+========================================================== */
+
+.title-right{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+   CLOSE BUTTON
+========================================================== */
+
+.window-btn{
+
+    width:20px;
+
+    height:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:0;
+
+    border:3px solid var(--pink-dark);
+
+    background:var(--pink);
+
+    color:white;
+
+    font-family:'Press Start 2P', monospace;
+
+    font-size:8px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    box-shadow:2px 2px #C24363;
+
+    transition:.08s;
+
+    -webkit-app-region:no-drag;
+
+}
+
+.window-btn:hover{
+
+    background:#FF77AE;
+
+    transform:translate(1px,1px);
+
+    box-shadow:1px 1px #C24363;
+
+}
+
+.window-btn:active{
+
+    transform:translate(2px,2px);
+
+    box-shadow:none;
+
+}
+
+.window-btn:focus{
+
+    outline:none;
+
+}
+
+/* ==========================================================
+   CONTENT • DAY • DATE • MONTH • DIVIDER
+========================================================== */
+
+/* ==========================
+   CONTENT
+========================== */
+
+.content{
+
+    padding:28px 30px 30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/* ==========================
+   DAY
+========================== */
+
+.day-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:26px;
+
+}
+
+#day{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:28px;
+
+    padding:0 12px;
+
+    background:#F1DBFF;
+
+    border:2px solid #CA91E2;
+
+    color:#A656C8;
+
+    font-size:8px;
+
+    letter-spacing:2px;
+
+    text-shadow:1px 1px #EAC3F4;
+
+    box-shadow:2px 2px 0 #B372CE;
+
+}
+
+/* ==========================
+   DATE
+========================== */
+
+.date-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:22px;
+
+}
+
+#date{
+
+    font-family:'Press Start 2P', monospace;
+
+    font-size:68px;
+
+    line-height:.85;
+
+    color:#D061C1;
+
+    letter-spacing:-5px;
+
+    text-shadow:
+
+        4px 4px 0 #A53F98,
+
+        7px 7px 0 #EBADD9;
+
+}
+
+/* ==========================
+   MONTH / YEAR
+========================== */
+
+.month-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:24px;
+
+}
+
+#month{
+
+    color:#C25FB4;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    text-shadow:2px 2px #EFC8E7;
+
+}
+
+#year{
+
+    color:#B56BC8;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    text-shadow:2px 2px #E6C8F5;
+
+}
+
+.dot{
+
+    width:4px;
+
+    height:4px;
+
+    background:#DE8FD3;
+
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+.divider{
+
+    width:100%;
+
+    height:4px;
+
+    margin-bottom:26px;
+
+    background:
+    repeating-linear-gradient(
+
+        90deg,
+
+        #E0A8F0 0px,
+
+        #E0A8F0 8px,
+
+        transparent 8px,
+
+        transparent 12px
+
+    );
+
+}
+
+/* ==========================================================
+   TIME • PIXELS • FINAL POLISH
+========================================================== */
+
+/* ==========================
+   TIME
+========================== */
+
+.time-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+}
+
+#time{
+
+    font-family:'Press Start 2P', monospace;
+
+    font-size:22px;
+
+    line-height:1;
+
+    letter-spacing:2px;
+
+    color:#9748BE;
+
+    text-shadow:
+        2px 2px 0 #70309F,
+        3px 3px 0 #F0C3E9;
+
+}
+
+#ampm{
+
+    margin-left:10px;
+
+    margin-bottom:3px;
+
+    color:#C57FDF;
+
+    font-size:8px;
+
+    text-shadow:1px 1px 0 #F2CCF8;
+
+}
+
+/* ==========================
+   BOTTOM PIXELS
+========================== */
+
+.pixels{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:6px;
+
+    margin-top:26px;
+
+}
+
+.pixel{
+
+    width:8px;
+
+    height:8px;
+
+    border:1px solid rgba(180,100,200,.30);
+
+}
+
+.pixel:nth-child(1){
+
+    background:#F8A8D8;
+
+}
+
+.pixel:nth-child(2){
+
+    background:#E7A0EF;
+
+}
+
+.pixel:nth-child(3){
+
+    background:#C7A0F8;
+
+}
+
+.pixel:nth-child(4){
+
+    background:#E7A0EF;
+
+}
+
+.pixel:nth-child(5){
+
+    background:#F8A8D8;
+
+}
+
+/* ==========================
+   WIDGET POLISH
+========================== */
+
+.widget{
+
+    position:relative;
+
+}
+
+.widget::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    box-shadow:
+
+        inset 2px 2px 0 rgba(255,255,255,.10),
+
+        inset -2px -2px 0 rgba(0,0,0,.03);
+
+}
+
+/* ==========================
+   TRANSITIONS
+========================== */
+
+#day,
+.window-btn,
+.pixel{
+
+    transition:.08s linear;
+
+}
+
+.pixel:hover{
+
+    transform:translateY(-1px);
+
+}
+
+/* ==========================
+   REMOVE OUTLINES
+========================== */
+
+button{
+
+    outline:none;
+
+}
+
+button:focus{
+
+    outline:none;
+
+}
+
+/* ==========================
+   PREVENT TEXT SELECTION
+========================== */
+
+body,
+.widget,
+.content{
+
+    user-select:none;
+
+}

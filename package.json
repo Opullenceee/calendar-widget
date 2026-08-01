@@ -1,0 +1,34 @@
+{
+  "name": "calendar-widget",
+  "version": "1.0.0",
+  "description": "Desktop Calendar Widget",
+  "main": "main.js",
+  "author": "Izza",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^37.10.3",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.izza.pixelcalendar",
+    "productName": "Calendar Widget",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/icon.ico"
+    }
+  },
+  "keywords": [],
+  "type": "commonjs"
+}

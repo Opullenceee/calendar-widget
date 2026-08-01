@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Calendar</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css">
+
+</head>
+
+<body>
+
+    <main class="widget">
+
+        <!-- ==========================
+             HEADER
+        =========================== -->
+
+        <header class="title-bar">
+
+            <div class="title-left">
+
+                <div class="pixel-btn pink"></div>
+
+                <div class="pixel-btn light"></div>
+
+                <span class="title">
+                    CALENDAR
+                </span>
+
+            </div>
+
+            <div class="title-right">
+
+                <button
+                    id="close-btn"
+                    class="window-btn">
+
+                    ✕
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- ==========================
+             CONTENT
+        =========================== -->
+
+        <section class="content">
+
+            <!-- Day -->
+
+            <div class="day-container">
+
+                <span
+                    id="day">
+
+                    SATURDAY
+
+                </span>
+
+            </div>
+
+            <!-- Date -->
+
+            <div class="date-container">
+
+                <h1 id="date">
+                    01
+                </h1>
+
+            </div>
+
+            <!-- Month -->
+
+            <div class="month-container">
+
+                <span id="month">
+                    AUG
+                </span>
+
+                <div class="dot"></div>
+
+                <span id="year">
+                    2026
+                </span>
+
+            </div>
+
+            <!-- Divider -->
+
+            <div class="divider"></div>
+
+            <!-- Time -->
+
+            <div class="time-container">
+
+                <span id="time">
+
+                    10:45:33
+
+                </span>
+
+                <span id="ampm">
+
+                    PM
+
+                </span>
+
+            </div>
+
+            <!-- Bottom Decoration -->
+
+            <div class="pixels">
+
+                <div class="pixel"></div>
+                <div class="pixel"></div>
+                <div class="pixel"></div>
+                <div class="pixel"></div>
+                <div class="pixel"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="renderer.js"></script>
+
+</body>
+
+</html>
