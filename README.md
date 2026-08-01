@@ -23,20 +23,6 @@ Perfect for users who enjoy aesthetic desktop setups.
 
 ---
 
-# 📸 Preview
-
-> Add screenshots here.
-
-```
-preview.png
-```
-
-```md
-![Preview](assets/preview.png)
-```
-
----
-
 # ✨ Features
 
 | Feature                   | Description                                            |
