@@ -65,7 +65,6 @@ pixel-calendar/
 ├── preload.js
 ├── main.js
 ├── package.json
-├── package-lock.json
 └── README.md
 ```
 
