@@ -56,7 +56,7 @@ Perfect for users who enjoy aesthetic desktop setups.
 pixel-calendar/
 │
 ├── assets/
-│   ├── fonts/
+│   ├── preview.png
 │   └── icons/
 │
 ├── index.html
