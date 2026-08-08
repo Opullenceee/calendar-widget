@@ -15,7 +15,7 @@
     "electron-builder": "^26.15.3"
   },
   "build": {
-    "appId": "com.izza.pixelcalendar",
+    "appId": "com.izza.calendarwidget",
     "productName": "Calendar Widget",
     "directories": {
       "output": "dist"
